@@ -14,21 +14,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # Gerar Stats com repositórios privados
+      # Gerar GitHub Stats com repositórios privados
       - name: Generate Stats
         env:
           PAT: ${{ secrets.PAT }}
         run: |
           curl -o stats.svg "https://github-readme-stats.vercel.app/api?username=${{ github.repository_owner }}&count_private=true&include_all_commits=true&theme=dracula&token=${{ secrets.PAT }}"
 
+      # Gerar Linguagens Mais Usadas
+      - name: Generate Most Used Languages
+        env:
+          PAT: ${{ secrets.PAT }}
+        run: |
+          curl -o languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=dracula&token=${{ secrets.PAT }}"
+
       # Commit e Push dos arquivos gerados
-      - name: Push Changes
+      - name: Commit and Push Changes
         env:
           PAT: ${{ secrets.PAT }}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add stats.svg
-          git commit -m "Atualizando Stats com repositórios privados"
-          git push "https://${{ secrets.PAT }}@github.com/${{ github.repository_owner }}
-          echo "Repository owner: ${{ github.repository_owner }}"
+          git add stats.svg languages.svg
+          git commit -m "Atualizando gráficos com repositórios privados"
+          git push "https://${{ secrets.PAT }}@github.com/${{ github.repository_owner }}.git"
