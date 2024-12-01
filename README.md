@@ -13,7 +13,7 @@
 
 ###
 
-<h3 align="center">Tecnologias e ferramentas</h3>
+<h3 align="center">Tecnologias Mais Usadas</h3>
 
 ###
 
