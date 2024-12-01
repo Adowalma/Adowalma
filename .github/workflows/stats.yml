@@ -31,3 +31,4 @@ jobs:
           git add stats.svg
           git commit -m "Atualizando Stats com repositórios privados"
           git push "https://${{ secrets.PAT }}@github.com/${{ github.repository_owner }}.git"
+          echo "Repository owner: ${{ github.repository_owner }}"
