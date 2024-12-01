@@ -1,4 +1,4 @@
-<h2 align="center">Olá 👋! Sou a Adowalma, devenvolvedora web fullStack, amante de tecnologia, arte e educação.</h2>
+<h2 align="center">Olá 👋! Sou a Adowalma, amante de tecnologia, arte e educação.</h2>
 
 ###
 
