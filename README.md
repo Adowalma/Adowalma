@@ -39,7 +39,7 @@
 
 ###
 
-<h3 align="center">Redes sociais</h3>
+<h3 align="center">Redes Sociais</h3>
 
 ###
 
