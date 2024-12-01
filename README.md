@@ -3,8 +3,12 @@
 ###
 
 <div align="center">
-## 📊 Minhas Estatísticas
+## 📊 GitHub Stats
 <img src="./stats.svg" alt="GitHub Stats" height="150">
+
+## 📚 Linguagens Mais Usadas
+<img src="./languages.svg" alt="Most Used Languages" height="150">
+
 
  
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Adowalma&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
