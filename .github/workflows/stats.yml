@@ -8,6 +8,8 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Permissão de escrita nos conteúdos do repositório
 
     steps:
       # Checkout do repositório
