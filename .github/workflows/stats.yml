@@ -32,5 +32,6 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add stats.svg languages.svg
+          git diff --quiet && exit 0  # Sai se não houver mudanças
           git commit -m "Atualizando gráficos com repositórios privados"
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.git"
